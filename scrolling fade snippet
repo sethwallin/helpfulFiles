@@ -1,0 +1,30 @@
+CSS and HTML to setup a scrolling fade. the 'top' properties would be set adjusted per use, but the heights and gradient changes make a nice fade out as things scroll up. Could be use to fade in as well, with a reversal of the <div> tags.
+
+<div class="fader" id="topFader"></div>
+<div class="fader" id="midFader"></div>
+<div class="fader"></div>
+
+#topFader {
+	position: fixed;
+	top: 70;
+	height: 15px;
+	background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0.9));
+}
+
+#midFader {
+	position: fixed;
+	top: 85;
+	height: 20px;
+	background-image: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+
+}
+
+.fader {
+	position: fixed;
+	top: 105px;
+	z-index: 1;
+	height: 30px;
+	width: 100%;
+	background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0));
+}
+
